@@ -34,3 +34,17 @@ pre::selection {
   color: #ff0000;
   background-color: #3f51b5;
 }
+.box {
+  width: 200px;
+  height: 100px;
+}
+
+.top {
+  margin-bottom: 20px;
+  background-color: teal;
+}
+
+.bottom {
+  margin-top: 40px;
+  background-color: palevioletred;
+}
