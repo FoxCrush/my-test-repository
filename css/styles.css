@@ -1,50 +1,58 @@
-/* .schedule-body > tr:hover {
-  background-color: orange;
-} */
-
-/* Оформление таблицы */
-.schedule {
-  border-collapse: collapse;
-}
-
-.schedule th,
-.schedule td {
-  padding: 8px;
-  border: 1px solid #212121;
-}
-tr > td:hover {
-  background-color: rgba(255, 0, 0, 0.3);
+.body {
+  background-color: chocolate;
 }
 .title {
-  color: #ffffff;
-  text-shadow: 5px 5px 5px #ff0000, 5px 5px 20px #000000;
+  font-size: large;
+  transition: color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    transform 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
-pre {
-  font-family: 'Arial', 'Helvetica', sans-serif;
-  color: #2a2a2a;
-  font-size: 16px;
+.button:hover .title {
+  transform: scale(2);
+  color: blueviolet;
 }
+.button {
+  position: relative;
+  margin: 200px 200px;
+  height: 150px;
+  width: 500px;
+  background-color: #cccccc;
+  cursor: pointer;
+  font: inherit;
+  overflow: hidden;
+  transition: background-color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+.button:hover {
+  background-color: cyan;
+}
+.button::after,
+.button::before {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background-image: url(../images/webstudio-logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 
-pre::first-letter {
-  font-family: 'Tahoma', serif;
-  font-size: 32px;
-  color: #f44336;
-}
-pre::selection {
-  color: #ff0000;
-  background-color: #3f51b5;
-}
-.box {
-  width: 200px;
-  height: 100px;
-}
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  opacity: 1;
 
-.top {
-  margin-bottom: 20px;
-  background-color: teal;
+  transition: transform 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    opacity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
-
-.bottom {
-  margin-top: 40px;
-  background-color: palevioletred;
+.button::before {
+  background-image: url(../images/facebook2.svg);
+  left: 10px;
+  top: 50%;
+  transform: translateX(-100%);
+  opacity: 1;
+}
+.button:hover::after {
+  opacity: 1;
+  transform: translateX(120%);
+}
+.button:hover::before {
+  transform: translateX(120%);
 }
