@@ -1,0 +1,20 @@
+{
+  "name": "my-test-repository",
+  "version": "1.0.0",
+  "description": "Repositori for pars my html tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FoxCrush/my-test-repository.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FoxCrush/my-test-repository/issues"
+  },
+  "homepage": "https://github.com/FoxCrush/my-test-repository#readme"
+}
